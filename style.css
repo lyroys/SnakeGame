@@ -1,0 +1,60 @@
+#wrapper {
+  margin: 0 auto;
+  background-color: yellow;
+  width: 608px;
+  height: 608px;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+#audioButton {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 542px;
+  z-index: 3;
+  height: 55px;
+  width: 55px;
+  overflow: auto;
+  background-image: url("img/pause.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid black;
+}
+
+#audioButton:hover {
+  background-color: white;
+}
+
+#audioButton.play {
+  background-image: url("img/play.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid black;
+}
+
+#start {
+  position: absolute;
+  z-index: 2;
+  margin-left: 84px;
+  top: 220px;
+  display: block;
+  width: 440px;
+  height: 160px;
+  font-size: 30px;
+  background-color: rgba(194, 202, 234, 0.8);
+}
+
+#start p {
+  font-family: sans-serif;
+  padding-top: 7%;
+  text-align: center;
+}
+
+#start.hide {
+  display: none;
+}
